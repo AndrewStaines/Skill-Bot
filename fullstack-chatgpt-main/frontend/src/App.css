@@ -1,0 +1,168 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(59, 59, 59);
+}
+
+.App-header {
+  width: 80%;
+  max-width: 1250px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.user,
+.assistant {
+  max-width: 70%;
+  margin: 10px;
+  margin-left: 150px;
+  padding: 15px;
+  border-radius: 20px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.user {
+  background-color: rgb(42, 42, 42);
+  color: rgb(255, 255, 255);
+  padding-left: 25px;
+  align-self: flex-end;
+  /* Keep this to position on the right */
+}
+
+.assistant {
+  background-color: transparent;
+  border: 2px solid #2a9438;
+  color: rgb(255, 255, 255);
+  padding-left: 25px;
+  align-self: flex-start;
+  /* Keep this to position on the left */
+}
+
+
+input {
+  width: 75%;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 85px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  padding: 15px;
+  background-color: #00ff22;
+  color: black;
+  border-radius: 20px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+}
+
+button:hover {
+  background-color: #2a9438;
+}
+
+.spin{
+  display: none;
+}
+
+.code-container {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Style for each code snippet */
+.code-snippet {
+  background-color: #1b2628; 
+  border-radius: 10px; 
+  padding: 30px;
+  margin-bottom: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  max-width: 80%; 
+  overflow-x: auto;
+}
+
+/* Style for code text inside the snippet */
+.code-snippet pre {
+  margin: 0; 
+  white-space: pre-wrap;
+}
+
+/* Style for regular text messages */
+.message {
+  margin-bottom: 10px;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column; /* Stack messages in reverse order */
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 600px; /* Example max height; adjust as needed */
+}
+
+.message {
+  margin: 5px;
+}
+
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message p {
+  margin: 0; /* Reset default margin for paragraphs */
+}
+
+.message ul,
+.message ol {
+  margin-top: 5px; /* Adjust margin for lists */
+}
+
+
+#dm{
+  animation: zoom 1s infinite alternate;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.copy-right p{
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.copy-right{
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}

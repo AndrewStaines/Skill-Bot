@@ -1,0 +1,39 @@
+/* Spinner.css */
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+  }
+  
+  .bubble {
+    width: 20px; /* Bubble size */
+    height: 20px; /* Bubble size */
+    border-radius: 50%;
+    background-color: #2a9438; /* Bubble color */
+    margin: 0 5px; /* Adjust spacing between bubbles */
+    animation: jump 0.5s infinite alternate; /* Apply animation */
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    100% {
+      transform: translateY(-15px); /* Jump height */
+    }
+  }
+  
+  .bubble1 {
+    animation-delay: 0.1s; /* Delay for bubble animation */
+  }
+  
+  .bubble2 {
+    animation-delay: 0.2s; /* Delay for bubble animation */
+  }
+  
+  .bubble3 {
+    animation-delay: 0.3s; /* Delay for bubble animation */
+  }
+  
